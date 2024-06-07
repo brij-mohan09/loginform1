@@ -12,13 +12,21 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: seagreen;
+    background: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper {
     width: 420px;
-    background: purple;
-    color: #fff;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff44f;
+    border-radius: 10px;
+    padding: 30px 40px;
 }
 
 .wrapper h1 {
@@ -26,11 +34,11 @@ body {
     text-align: center;
 }
 
-.wrapper .input {
+.wrapper .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    background: salmon;
+    /* background: salmon; */
     margin: 30px 0;
 }
 
@@ -38,16 +46,17 @@ body {
     width: 100%;
     height: 100%;
     background: transparent;
+    border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #fff44f;
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: #fff;
+    color: #fff44f;
 }
 
 .input-box i {
@@ -63,4 +72,48 @@ body {
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+    accent-color: #fff44f;
+    margin-right: 3px;
+}
+
+.remember-forget a {
+    color: #fff44f;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff44f;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff44f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
 }
